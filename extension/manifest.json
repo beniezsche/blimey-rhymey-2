@@ -1,0 +1,35 @@
+{
+    "manifest_version" : 3,
+    "name" : "Blimey Rhymey",
+    "description": "Convert news headlines to fun",
+    "version": "0.0.1",
+    "action": {
+        "default_icon": "icons/icons-32.png"
+    },
+    "icons": {
+      "16": "icons/icons-32.png",
+      "32": "icons/icons-32.png",
+      "48": "icons/icons-64.png",
+      "128": "icons/icons-96.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+      "https://*/*",
+      "http://*/*",
+      "ws://*/*"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["*://*.hindustantimes.com/*"], 
+          "js": ["content.js"]
+        }
+      ]
+}
+
+
+  
