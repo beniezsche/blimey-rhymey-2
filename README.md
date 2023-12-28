@@ -1,2 +1,2 @@
 # blimey-rhymey
-Chrome extension to convert headlines into fun mystical limmericks and explore the headlines
+Chrome extension to convert text into fun mystical limmericks and explore the magic of chroma
